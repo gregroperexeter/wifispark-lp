@@ -1,0 +1,43 @@
+{
+  "name": "wifispark-airport-lp-greg-roper",
+  "version": "1.1.0",
+  "description": "An authentication landing page for an airport client.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
+  },
+  "author": "Dominik Hanke",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "autoprefixer": "^9.7.4",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.2",
+    "dotenv-webpack": "^1.7.0",
+    "exports-loader": "^0.7.0",
+    "file-loader": "^5.0.2",
+    "lodash": "^4.17.15",
+    "mime-types": "^2.1.26",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.13.1",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.3.1",
+    "sharp": "^0.23.2",
+    "tar": "^4.4.13",
+    "tiny-glob": "^0.2.6",
+    "trash": "^6.1.1",
+    "uglify-js": "^3.7.6",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}

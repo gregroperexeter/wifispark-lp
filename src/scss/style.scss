@@ -1,0 +1,162 @@
+@import "~bootstrap/scss/bootstrap";
+
+/* FOUT control
+----------------------------*/
+.wf-loading * {
+  opacity: 0;
+}
+.wf-loading {
+  background: url('images/loading.gif') no-repeat center center; /* just to show that something's happening */
+  height: 100%;
+  overflow: hidden;
+}
+.wf-active * {
+  transition: opacity 0.5s ease-out;  
+}
+
+/* Colours
+----------------------------*/
+$blue: #003264;
+$red: #D60000;
+
+/* Type
+----------------------------*/
+h1 {
+  color: #ffffff;
+  font-size: 40px;
+}
+h2 {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: Montserrat; 
+  font-weight: 700;
+}
+
+/* Container
+----------------------------*/
+.container {
+  @media (max-width: 576px) {  
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* Form
+----------------------------*/
+#form-div {
+  .card {
+    background: rgba(255, 255, 255, 0.85);
+    @media (max-width: 576px) {  
+      background: rgba(255, 255, 255, 0.55);
+      border: none;
+    }
+  }
+  .card-body {
+    @media (max-width: 576px) {  
+      padding: 10px;
+    }
+  }
+  .form-group {
+    margin-bottom: 0.5rem;
+  }
+  .form-control {
+    font-size: 18px;
+  }
+  .custom-control-label {
+    color: $blue;
+    font-size: 14px;
+  }
+  .form-link {
+    color: $red;
+    text-decoration: underline;
+  }
+  .agree {
+    color: $blue;
+    font-size: 12px;
+  }
+  .btn {
+    width: 100%;
+    @include transition(all 0.3s ease);
+    &.btn-danger {
+      background-color: $red;
+      width: 100%;
+      &:hover, 
+      &:focus {
+        text-decoration: none;
+        color: white; 
+        background-color: $blue;
+        border-color: $blue;
+      }
+    }
+  }
+}
+
+#form-grid {
+}
+
+/* Main images
+----------------------------*/
+// .logo-xs-only {
+// }
+// .logo-sm-up {
+// }
+
+/* Navbar burger
+----------------------------*/
+.ml-md-auto, .mx-md-auto {
+  margin-left: auto !important;
+}
+
+/* Sticky footer
+----------------------------*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px; /* Margin bottom by footer height */
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: rgba(0, 14, 67, 0.2);
+  .wifi-help-text {
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+  }
+
+}
+
+/* Background image
+----------------------------*/
+.cover-image {
+  // Extra small devices (portrait phones, less than 576px)
+  background-image: url('images/bg_small.jpg');
+  background-position: 0px 0px, bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {  
+    background-position: 0px -200px, bottom;
+  }
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    background-position: 0px 0px, bottom;
+  }
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    background-image: url('images/bg_large.jpg');
+    background-position: 0px 0px, bottom;
+  }
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    background-image: url('images/bg_large.jpg');
+    background-position: 0px -500px, bottom;
+  }
+}

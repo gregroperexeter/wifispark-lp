@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Wifi SPARK</title>
+    <link rel="preconnect" href="https://ajax.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://ajax.gstatic.com">
+    <script>
+      WebFontConfig = {
+       google: {
+         families: ['Montserrat:700']
+       }
+     };
+     (function(d) {
+         var wf = d.createElement('script'), s = d.scripts[0];
+         wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+         wf.async = true;
+         s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="dist/images/fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="dist/images/fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="dist/images/fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="dist/images/fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="dist/images/fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="dist/images/fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="dist/images/fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="dist/images/fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="dist/images/fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="dist/images/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/fav/favicon-16x16.png">
+    <link rel="manifest" href="dist/images/fav/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="dist/images/fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body class="cover-image">
+
+    <header>
+      <nav class="navbar navbar-expand navbar-dark">
+        <div class="navbar-collapse collapse">
+          <ul class="navbar-nav ml-md-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right text-right" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#helpModal" >WiFi Help and FAQs</a>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#termsModal" >Terms and Conditions</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+
+        <div class="logo-xs-only">
+          <img class="d-none d-sm-block mx-auto" height="50px" src="dist/images/spark_logo_3.png">
+        </div>
+        <div class="logo-sm-up mb-2">
+          <img class="d-sm-none" height="50px" src="dist/images/spark_logo_1.png">
+        </div>
+        <h1 class="text-center mb-3">
+          Free WiFi
+        </h1>
+        <h2 class="text-center d-none d-sm-block mb-5">
+          SPARK INTERNATIONAL AIRPORT
+        </h2>
+
+        <div id="form-div">
+          <div class="row">
+            <div id="form-grid" class="col-sm-6 offset-sm-3 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+              
+              <div class="card mx-auto">
+                <div class="card-body">
+
+                  <form id="authentication-form">
+                    <div class="form-group">
+                      <input class="form-control" type="text" name="firstname" placeholder="First Name" pattern="([a-zA-Z0-9]+)" minlength="4" maxlength="24" required>
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" type="text" name="lastname" placeholder="Last Name" pattern="([a-zA-Z0-9]+)" minlength="4" maxlength="24" required>
+                    </div>
+                    <div class="form-group mb-3">
+                      <input class="form-control" type="email" name="email" placeholder="Email Address" pattern="([a-zA-Z0-9_.+-]+[@]{1}[a-zA-Z0-9-]+[\.]{1}[a-zA-Z0-9-.]+)" minlength="4" maxlength="24" required>
+                    </div>
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1" name="terms" required>
+                        <label class="custom-control-label" for="customCheck1">I conﬁrm that I have read and agree to the <a href="#" class="form-link terms-modal" data-toggle="modal" data-target="#termsModal">Terms and Conditions</a></label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2" name="updates">
+                        <label class="custom-control-label" for="customCheck2">Tick to receive updates by email</label>
+                      </div>
+                    </div>
+                    <div class="form-group mb-4">
+                      <p class="agree">
+                        By clicking below you agree to the use of your data in accordance with our <a href="" class="form-link privacy-modal" data-toggle="modal" data-target="#privacyModal">Privacy Policy</a>
+                      </p>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-danger btn-lg">ACCEPT AND CONNECT</button>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="wifi-help-text"><a href="#" data-toggle="modal" data-target="#helpModal">Wifi Help</a></span>
+        <span class="float-right ">
+          <img class="d-none d-sm-block mx-auto pt-3" height="50px" src="dist/images/spark_logo_4.png">
+          <img class="d-sm-none" height="30px" src="dist/images/spark_logo_2.png">
+        </span>
+      </div>
+    </footer>
+
+    <!-- Help Modal -->
+    <div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="helpModalLabel">Wifi Help and FAQs</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="h4 mb-3">​Instructions</div>
+            <ol>
+              <li>Fill in the registration form.</li>
+              <li>Agree to the Terms and Conditions.</li>
+              <li>Choose if you would like to receive news and offers from us. You can stop receiving this information at any time by clicking “Unsubscribe” at the bottom of any e-communication from us.</li>
+              <li>Click ACCEPT AND CONNECT. </li>
+            </ol>
+            Upon completing the registration process, your device will be recognised when you next return. 
+
+            <div class="h4 mt-3 mb-3">​Help & FAQs​</div>
+
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Can I use more than one device? 
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Yes. You will need to go through the registration on each device separately. 
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Can I use a VPN? 
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    YES! In fact, if you are connecting to the internet through your own laptop we would recommend using a VPN client for secure access to company intranets and mail servers. Check that your company VPN supports NAT traversal and allows multiple connections from a single IP address. Check with your IT staff. Please ensure that you are logged in through the portal page before you use your VPN. 
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Are there any data usage limits? 
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    As detailed in our Terms and Conditions there is a fair usage policy of 20GB per month.
+                  </div>
+                </div>
+              </div>
+            </div>
+             
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Privacy Modal -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="privacyModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="privacyModalLabel">Privacy</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="termsModalLabel">Terms and Conditions</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            The paragraphs below are the terms and conditions for WiFi SPARK's wireless internet access services (the "Service") supplied by WiFi SPARK Limited to you ("You"). WiFi SPARK Limited is a UK company based in 5 Cranmere Court, Lustleigh Close, Matford Business Park, Exeter, EX2 8PW England ("WiFi SPARK"). These terms and conditions may be modified by WiFi SPARK at any time by updating these terms on our website. If you are under the age of 13, by continuing to use this service and by accepting the Terms and Conditions, you confirm that you have received consent from a parent or guardian to use this service. By continuing to use this service, or, if applicable, by agreeing to pay for this service, you agree to accept, conduct your business within the terms 
+
+            stated, and be bound by the following; 
+             
+            WiFi SPARK’s Obligations and Rights: a) By accepting these Terms and Conditions and connecting to the WiFi service, WiFi SPARK may process device information and any Personal Data entered upon registration on behalf of the Data Controller. Device information includes MAC address, IP address. WiFi SPARK will not disclose device and personal information collected in conjunction with the provision of this service to a third party without consent, except to companies with which we have contracted for the provision of the Service or the regulator. WiFi SPARK may collect information on your usage of this Service including web pages visited, domains and email traffic. WiFi SPARK will, if required by law, disclose your personal information and or information pertaining to the usage of the Service to the relevant authorities in the investigation of any suspected or alleged crime. 
+             
+            b) Customer Service is available in the United Kingdom by dialling 0344 848 9555 or by email at support@wifispark.com. WiFi SPARK is committed to providing uninterrupted access to this Service. WiFi SPARK will use best endeavours to only allow system downtime and maintenance outside of normal working hours (9AM-5PM Monday to Friday). We reserve the right to modify or temporarily suspend the Service or any part of it without notice to you for emergency technical repair or upgrade for any reason, or if the service host has not paid WiFi SPARK for the provision of this service in its premises. 
+             
+            c) You acknowledge and are responsible for the security of your connection to the internet, your device that is used for connecting and for any sites you visit, emails you send or receive or information transmitted or received in any format when you use our Service. WiFi SPARK provides no additional security than you already have because we provide management and monitoring services only and do not modify any content. For that reason, we cannot be and are not responsible for the security or content you transmit or receive on the internet. 
+             
+            d) You acknowledge that your use of the service is entirely at your own risk. WiFi SPARK does not guarantee the availability or security of the Service. You have the right to compensation for direct damages caused by WiFi SPARK through negligence. Direct damages are defined as the reasonable and verifiable additional costs incurred by you. WiFi SPARK's liability shall be limited to the amount you have paid for the Service limited to a one month subscription. WiFi SPARK shall not be liable to you in any circumstances for any damages which result in any way from your use or inability to use the service (or any part of it), including any indirect, special or consequential losses, lost profits, business interruption, information or loss of data, security breach, busy signals, errors, delays in the Service, unavailability of the Service, deletion of files, theft, loss of goodwill or other pecuniary loss, including loss or damage suffered as a result of any virus, denial of service, spamming or hacking. Nothing in this clause excludes or limits the liability of WiFi SPARK for (i) death or personal injury caused by WiFi SPARK's negligence; (ii) fraud or fraudulent misrepresentation; or (iii) for any other liability that cannot be excluded or limited by law. 
+             
+            e) WiFi SPARK reserves the right to block any websites, web pages and content on its service that WiFi SPARK deems illegal, distasteful or generally unsuitable for the location in which this service is provided. WiFi SPARK does not wish to restrict your use of our service unreasonably but by using this service you agree to accept our filtering criteria which may change from time to time. WiFi SPARK has no obligation to you to include sites that are blocked from use. 
+             
+            f) WiFi SPARK may deny, terminate or suspend your access to all or any part of the Service without notice if you engage in any conduct or activities that WiFi SPARK in its sole discretion believes 
+
+             
+            violates any of these Terms and Conditions 
+             
+            g) WiFi SPARK reserves the right to slow bandwidth or connection speeds at certain times at WiFi SPARK's convenience. 
+             
+            h) In using this service, you understand that WiFi SPARK may place cookies on your device to enable the service to remember you. You may block cookies by activating the setting on your browser that allows you to refuse the setting of all or some cookies. 
+             
+            End User’s Obligations and Rights: a) You are responsible for maintaining the confidentiality of your WiFi account and all activities that occur during your use of this service. 
+             
+            b) You will not be eligible for any compensation if you cannot use the Service because of power or equipment failure, routine maintenance or circumstances outside of WiFi SPARK's control including downtime due to the failure of an internet service provider's connection. If, however, the Service is not available for reasons other than the above, please contact WiFi SPARK's Customer Service on 0344 848 9555 for a possible refund or credit of time. 
+             
+            c) You acknowledge that all intellectual property (including copyright, trademarks and trade names) in the Service and on the website used to access it remain the property of WiFi SPARK or its licensors. You agree to respect these rights and not to do anything to infringe on them. In particular, but without limitation, you agree not to alter or remove any trademarks and not to copy, download, transmit, reproduce, print or exploit any of this material. 
+             
+            d) You shall indemnify WiFi SPARK for any breach of clause (c), above, 
+             
+            e) You agree that you will not use the WiFi SPARK service for: 
+             
+            (1) unlawful, fraudulent, criminal or otherwise illegal activities; 
+             
+            (2) sending, receiving, publishing, posting, distributing, disseminating, encouraging the receipt of, uploading, downloading, recording, reviewing, streaming or using any material which is offensive, abusive, defamatory, indecent, obscene, unlawful, harassing or menacing or a breach of the copyright, trademark, intellectual property, confidence, privacy or any other rights of any person; 
+             
+            (3) knowingly or negligently transmitting or uploading any electronic material (including, without limit, files that contain viruses, corrupted files, or any other similar software or programs) which is known or likely to cause, interrupt, damage, destroy or limit the functionality of any computer software, hardware or telecommunications equipment owned by WiFi SPARK or any other Internet user or person; 
+             
+            (4) activities that are in breach of any other third party's rights, including file-sharing, downloading, installation or distribution of pirated software or other inappropriately licensed software, deletion of any author attributions, legal notices or proprietary designations or labels in any file that is uploaded, falsification of the origin or source of any software or other material; 
+             
+            (5) anything that may disrupt or interfere with WiFi SPARK's network or services or cause the network to crash; 
+             
+
+             
+            (6) launching "denial of service" attacks; "mailbombing" attacks; or "flooding" attacks against a host or network. Scanning of networks or hosts for open ports or other vulnerabilities; 
+             
+            (7) making excessive use of, or placing unusual burdens on, the network, for example by sending or receiving large volumes of email or excessively large files or extended high volume data transfer of any kind. Should we deem your use of our service excessive, and by this we mean transferring more than 20Gbytes / month or equivalent multiple thereof, we reserve the right to reduce your connection speed, or terminate your service. In such a situation you will not be eligible for a refund; 
+             
+            (8) circumventing the user authentication or security process of a host or network; 
+             
+            (9) creating, transmitting, storing or publishing any virus, malware, Trojan, corrupting program or corrupted data; or 
+             
+            (10) collecting, streaming, distributing or accessing any material that you know, or reasonably should know, cannot be legally collected, streamed, distributed or accessed. 
+             
+            Other Important Terms a) WiFi SPARK may transfer its rights and obligations under these Terms and Conditions to another organisation, but this will not affect your rights or our obligations under these Terms and Conditions. 
+             
+            b) Please note that these Terms and Conditions, its subject matter and its formation, are governed by English law. Both you and WiFi SPARK agree that the Courts of England and Wales will have exclusive jurisdiction. 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="dist/main.bundle.js"></script>
+  </body>
+</html>
