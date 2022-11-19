@@ -36,6 +36,6 @@
     "tiny-glob": "^0.2.6",
     "trash": "^6.1.1",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   }
 }
